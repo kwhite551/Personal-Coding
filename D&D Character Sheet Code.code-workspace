@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"name": "Imports-for-MPMB-s-Character-Sheet",
+			"path": "..\\Imports-for-MPMB-s-Character-Sheet"
+		},
+		{
+			"name": "MPMBs-Character-Record-Sheet",
+			"path": "..\\MPMBs-Character-Record-Sheet"
+		},
+		{
+			"name": "Personal Coding",
+			"path": "."
+		},
+		{
+			"name": "5etools Homebrew",
+			"path": "..\\5etools Homebrew"
+		},
+		{
+			"name": "5etools-homebrew",
+			"path": "..\\5etools-homebrew"
+		}
+	],
+	"settings": {}
+}
