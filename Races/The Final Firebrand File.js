@@ -89,8 +89,8 @@ RaceList["firebrand"] = {
 //create firebrand subraces
 AddRacialVariant("firebrand", "black", {
 		regExpSearch : /black/i,
-		name : "Black firebrand",
-		plural : "Black firebrand",
+		name : "Black Firebrand",
+		plural : "Black Firebrand",
 		source : [["P:TF", 0]],
 		improvements : "+2 Charimsa, +1 to two stats of your choice",
 		trait : "Black firebrand (+2 Charimsa, +1 to two stats of your choice)"
@@ -105,8 +105,8 @@ AddRacialVariant("firebrand", "black", {
 });
 AddRacialVariant("firebrand" , "blue", {
 		regExpSearch : /blue/i,
-		name : "Blue firebrand",
-		plural : "Blue firebrand",
+		name : "Blue Firebrand",
+		plural : "Blue Firebrand",
 		source : [["P:TF", 0]],
 		improvements : "+2 Charimsa, +1 to two stats of your choice",
 		trait : "Blue firebrand (+2 Charimsa, +1 to two stats of your choice)"
@@ -123,8 +123,8 @@ AddRacialVariant("firebrand" , "blue", {
 });
 AddRacialVariant("firebrand", "brass", {
 		regExpSearch : /brass/i,
-		name : "Brass firebrand",
-		plural : "Brass firebrand",
+		name : "Brass Firebrand",
+		plural : "Brass Firebrand",
 		source : [["P:TF", 0]],
 		improvements : "+2 Charimsa, +1 to two stats of your choice",
 		trait : "Brass firebrand (+2 Charimsa, +1 to two stats of your choice)"
@@ -141,8 +141,8 @@ AddRacialVariant("firebrand", "brass", {
 });
 AddRacialVariant("firebrand", "bronze", {
 		regExpSearch : /bronze/i,
-		name : "Bronze firebrand",
-		plural : "Bronze firebrand",
+		name : "Bronze Firebrand",
+		plural : "Bronze Firebrand",
 		source : [["P:TF", 0]],
 		improvements : "+2 Charimsa, +1 to two stats of your choice",
 		trait : "Bronze firebrand (+2 Charimsa, +1 to two stats of your choice)"
@@ -159,8 +159,8 @@ AddRacialVariant("firebrand", "bronze", {
 });
 AddRacialVariant("firebrand", "copper", {
 		regExpSearch : /copper/i,
-		name : "Copper firebrand",
-		plural : "Copper firebrand",
+		name : "Copper Firebrand",
+		plural : "Copper Firebrand",
 		source : [["P:TF", 0]],
 		improvements : "+2 Charimsa, +1 to two stats of your choice",
 		trait : "Copper firebrand (+2 Charimsa, +1 to two stats of your choice)"
@@ -177,8 +177,8 @@ AddRacialVariant("firebrand", "copper", {
 });
 AddRacialVariant("firebrand", "gold", {
 		regExpSearch : /gold/i,
-		name : "Gold firebrand",
-		plural : "Gold firebrand",
+		name : "Gold Firebrand",
+		plural : "Gold Firebrand",
 		source : [["P:TF", 0]],
 		improvements : "+2 Charimsa, +1 to two stats of your choice",
 		trait : "Gold firebrand (+2 Charimsa, +1 to two stats of your choice)"
@@ -195,8 +195,8 @@ AddRacialVariant("firebrand", "gold", {
 });
 AddRacialVariant("firebrand", "green", {
 		regExpSearch : /green/i,
-		name : "Green firebrand",
-		plural : "Green firebrand",
+		name : "Green Firebrand",
+		plural : "Green Firebrand",
 		source : [["P:TF", 0]],
 		improvements : "+2 Charimsa, +1 to two stats of your choice",
 		trait : "Green firebrand (+2 Charimsa, +1 to two stats of your choice)"
@@ -213,8 +213,8 @@ AddRacialVariant("firebrand", "green", {
 });
 AddRacialVariant("firebrand", "red", {
 		regExpSearch : /red/i,
-		name : "Red firebrand",
-		plural : "Red firebrand",
+		name : "Red Firebrand",
+		plural : "Red Firebrand",
 		source : [["P:TF", 0]],
 		improvements : "+2 Charimsa, +1 to two stats of your choice",
 		trait : "Red firebrand (+2 Charimsa, +1 to two stats of your choice)"
@@ -249,8 +249,8 @@ AddRacialVariant("firebrand", "silver", {
 });
 AddRacialVariant("firebrand", "white", {
 		regExpSearch : /white/i,
-		name : "White firebrand",
-		plural : "White firebrand",
+		name : "White Firebrand",
+		plural : "White Firebrand",
 		source : [["P:TF", 0]],
 		improvements : "+2 Charimsa, +1 to two stats of your choice",
 		trait : "White firebrand (+2 Charimsa, +1 to two stats of your choice)"
