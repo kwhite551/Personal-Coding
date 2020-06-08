@@ -622,10 +622,9 @@ AddSubClass("gunsmith", "trophy hunter", { //Trophy Hunter
             minlevel : 17,
             description : desc([
                 "If a marked creature gets more than 60ft away from me, I can spend a grit point as a reaction",
-                "I immediately take an additional turn where I can use my spend to move closer and attack",
-                "only them",
-                "If my mark is more than 60ft away at the end of that turn, the mark fades and I must finish",
-                "a short or long rest before I can use this ability again"
+                "I immediately take an additional turn where I can use my spend to move closer and attack them",
+                "If my mark is more than 60ft away at the end of that turn, the mark fades",
+                "I regain this ability after finishing a short or long rest."
             ]),
             usages : 1,
             recovery : "short rest",

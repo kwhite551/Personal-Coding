@@ -40,6 +40,7 @@ ClassList["baker"] = {
 	attacks : [1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
     spellcastingFactor : 1,
     spellcastingTable : [
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
         [2, 0, 0, 0, 0, 0, 0, 0, 0],
 		[4, 0, 0, 0, 0, 0, 0, 0, 0], 
 		[4, 1, 0, 0, 0, 0, 0, 0, 0], 
@@ -53,7 +54,6 @@ ClassList["baker"] = {
 		[4, 3, 3, 3, 1, 0, 0, 0, 0], 
 		[4, 3, 3, 3, 2, 0, 0, 0, 0], 
 		[4, 3, 3, 3, 2, 0, 0, 0, 0], 
-		[4, 3, 3, 3, 3, 0, 0, 0, 0], 
 		[4, 3, 3, 3, 3, 0, 0, 0, 0], 
 		[4, 3, 3, 3, 3, 0, 0, 0, 0], 
 		[4, 3, 3, 3, 3, 0, 0, 0, 0], 
@@ -90,6 +90,7 @@ ClassList["baker"] = {
         "\u2022 Level 10: The die increases to 1d8 and I reduce damage from spell attacks",
         "\u2022 Level 15: The die increases to 1d10"]) + 
     "\r\rExtra Abilities (Baker 1, TI:B 4)" + desc([
+        "I can cast the following with 1 Dusted Hands Point",
         "\u2022 Level 3: I gain Shield",
         "\u2022 Level 7: I gain Enlarge/Reduce",
         "\u2022 Level 11: I gain Firebolt",
@@ -107,13 +108,12 @@ ClassList["baker"] = {
             source : ["TI:B", 3],
             minlevel : 1,
             description : desc([
-                "I can use a spell slot to infuse magic into baked goods I make during a long rest",
-                "It takes 5 minutes of ritual casting and 35 minutes of baking to do",
-                "The spell slot can be a level equal to or greater than the spell's level",
+                "I can use a spell slot to infuse magic into baked goods between long rests",
+                "It takes 5 minutes of ritual casting and 30 minutes of baking",
+                "Each baked good needs a spell slot equal to the spell's level and lasts until a long rest",
                 "I or another person can eat the baked good to gain the spell's bonus",
-                "Alternatively, only I can throw the baked good in a range equal to the spell's range",
-                "My spell attack is equal to Cha mod + proficiency while my spell DC is equal to",
-                "8 + Cha Mod + proficiency"
+                "Alternatively, I can throw the baked good in a range equal to the spell's range",
+                "I cast my Baker spells using Charisma as my spellcasting Ability"
             ])
         },
         "dusted hands" : {
@@ -121,7 +121,6 @@ ClassList["baker"] = {
             source : ["TI:B", 3],
             minlevel : 1,
             description : desc([
-                "I gain the ability put enchanted flour on my hands for advantages in combat",
                 "I have a number of dusted hand points equal to my Charisma modifier",
                 "See the \"Notes\" page for the abilities I unlocked"
             ]),
@@ -130,7 +129,6 @@ ClassList["baker"] = {
             recovery : "long rest",
             eval : "if (classes.known.baker.level >= 1) {try { ClassList.baker.addDustedHandAbilities(); } catch (er) {} };",
             removeeval : "if (!(classes.known.levels >= 1) {try { ClassList.baker.removeDustedHandAbilities(); } catch (er) {} };",
-            spellcastingExtra : ["shield", "enlarge/reduce", "firebolt", "cure wounds", "modify memory"]
         },
         "sharpened knives" : {
             name : "Sharpened Knives", 
@@ -150,7 +148,7 @@ ClassList["baker"] = {
             description : desc([
                 "I can infuse two spells into the same baked good with two spell slots twice per long rest"
             ]),
-            usage : 2,
+            usages : 2,
             recovery : "long rest"
         },
         "portable kitchen" : {
@@ -201,7 +199,7 @@ AddSubClass("baker", "breads", {
             source : ["TI:B", 4],
             minlevel : 3,
             description : desc([
-                "I can spend 1 Dusted Hands Point to infuse strong flour into one of my bakes",
+                "I spend 1 Dusted Hands Point to infuse strong flour into one of my bakes",
                 "If the infused spell enhances a single target, I double the number of dice used"
             ])
         },
@@ -241,9 +239,8 @@ AddSubClass("baker", "pastries", {
             source : ["TI:B", 5],
             minlevel : 3,
             description : desc([
-                "I can spend 1 Dusted Hands Point to use a cold pocket dimension",
-                "This must be used when creating pastries",
-                "Any spell that provides healing heals the target for an extra 1d4"
+                "I can spend 1 Dusted Hands Point to use a cold pocket dimension ONLY to make pastries",
+                "Any spell that provides healing heals the target for an extra 1d4 from the cold dimension"
             ])
         },
         "subclassfeature9" : {
@@ -251,9 +248,7 @@ AddSubClass("baker", "pastries", {
             source : ["TI:B", 5],
             minlevel : 9,
             description : desc([
-                "The healing properties of my pastries are maximized",
-                "Me or a target are healed for maximum amount of points mentioned in the spell",
-                "I can do this twice per long rest"
+                "Me or a target are healed for maximum hit points mentioned in the spell twice per long rest",
             ]),
             usages : 2,
             recovery : "long rest"
@@ -264,9 +259,9 @@ AddSubClass("baker", "pastries", {
             minlevel : 13,
             description : desc([
                 "I can spend 2 Dusted Hands Points to extend the range of a healing spell as a bonus action",
-                "A touch range spell becomes a 10ft radius",
-                "All other ranged healing spells gain a radius equal to half their range around the baker",
-                "Healing spells with a radius have double their range"
+                "A touch range spell becomes a 10ft radius ",
+                "Ranged healing spells gain a radius equal to half their range around the baker",
+                "Radius healing spells have double the radius"
             ]),
             action : ["bonus action", ""]
         },
@@ -275,8 +270,7 @@ AddSubClass("baker", "pastries", {
             source : ["TI:B", 5],
             minlevel : 17,
             description : desc([
-                "When I use a pastry infused with a healing spell, I add my Charisma mod",
-                "+ proficiency bonus to the dice roll"
+                "I add my Charisma mod + proficiency bonus to a pastry healing spell's dice roll"
             ])
         }
     }
