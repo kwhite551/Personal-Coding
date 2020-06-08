@@ -58,7 +58,7 @@ RaceList["firebrand"] = {
 			},
 			"draconic ancestry" : {
 				name : "Draconic Ancestry",
-				limfeaname : "Breath Weapon",
+				limfeaname : "Draconic Fury",
 				minlevel : 1,
 				usages : 1,
 				additional : levels.map(function (n) {
