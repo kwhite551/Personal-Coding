@@ -1,4 +1,4 @@
-var iFileName = "Koibold [Roxiroon's Work, Transcribed by Sensecahl].js"
+var iFileName = "Koibold [Roxiroon's Work, Transcribed by Sensecahl].js";
 RequiredSheetVersion(13);
 
 SourceList["RR:K"] = {
