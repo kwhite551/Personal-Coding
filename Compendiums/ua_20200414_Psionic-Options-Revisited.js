@@ -60,7 +60,7 @@ AddSubClass("fighter", "psi knight", {
             }
         },
         "subclassfeature7" : {
-            name : "Tekelkinetic Adept",
+            name : "Telekinetic Adept",
             source : ["UA:POR", 3],
             minlevel : 7,
             description : "",
