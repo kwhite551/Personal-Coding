@@ -60,7 +60,7 @@ AddSubClass("fighter", "psi knight", {
             }
         },
         "subclassfeature7" : {
-            name : "Telekinetic Adept",
+            name : "Tekelkinetic Adept",
             source : ["UA:POR", 3],
             minlevel : 7,
             description : "",
@@ -412,113 +412,95 @@ FeatsList["metabolic control"] = {
     descriptionFull : "You have refined psionic control over your body’s functions. You gain the following benefits: \n \u2022 Increase your Strength, Dexterity, or Constitution score by 1, to a maximum of 20. \n \u2022 If your Psionic Talent die is available, you can take an action to channel your psionic power to nourish yourself for the next 24 hours, as if you consumed sufficient food and water for a day. When you take this action, your Psionic Talent die shrinks by one die size. \n \u2022 If your Psionic Talent die is available, you can meditate for 1 minute, at the end of which you gain the benefits of finishing a short rest, and your Psionic Talent die shrinks by one die size. You can’t meditate in this way again until you finish a long rest."
 };
 
-FeatsList["telekinetic [intelligence]"] = {
-    name : "Telekinetic [Intelligence]",
+FeatsList["telekinetic"] = {
+    name : "Telekinetic",
     source : ["UA:POR", 8],
     prerequisite : " Psionic Talent feature or Wild Talent feat",
     prereqeval : function() {
         return GetFeatureChoice('class', 'fighter', 'subclassfeature3').indexOf('Psionic Talent') != -1 || GetFeatureChoice('class', 'rogue', 'subclassfeature3').indexOf('Psionic Talent') != -1 || GetFeatureChoice('class', 'sorcerer', 'subclassfeature1').indexOf('Psionic Talent') != -1;
     },
+    description : "I cast the mage hand cantrip without verbal or somatic components and the hand can be invisible. I can shove a creature to or from me if they fail a Strength save. DC 8 + proficiency bonus + ability score increased by feat [+1  Intelligence, Wisdom, or Charisma]",
     descriptionFull : "You learn to move things with your mind. You gain the following benefits: \n \u2022 Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20. \n \u2022 You learn the mage hand cantrip. You can cast it without verbal or somatic components, and you can make the spectral hand invisible. If you already know this spell, its range grows by 30 feet when you cast it. Its spellcasting ability is the ability increased by this feat. \n \u2022 As a bonus action, you can try to telekinetically shove one creature you can see within 30 feet of you. When you do so, roll your Psionic Talent die, and the target must succeed on a Strength saving throw (DC 8 + your proficiency bonus + the ability modifier of the score increased by this feat) or be moved toward you or away from you a number of feet equal to 5 times the number you rolled. A creature can willingly fail this save.",
-    scores : [0, 0, 0, 1, 0, 0],
-    spellcastingBonus : {
-        name : "Telekinetic",
-        spellcastingAbility : 4,
-        spells : "mage hand",
-        selection : ["mage hand"],
+    choices : ["Intelligence", "Wisdom", "Charisma"],
+    "intelligence" : {
+        description : "I cast the mage hand cantrip without verbal or somatic components and the hand can be invisible. I can shove a creature to or from me if they fail a Strength save. DC 8 + proficiency bonus + Intelligence modifier [+1 Intelligence]",
+        scores : [0, 0, 0, 1, 0, 0],
+        improvements : "Telekinetc (feat): +1 Intelligence;",
+        spellcastingBonus : {
+            name : "Telekinetic",
+            spellcastingAbility : 4,
+            spells : "mage hand",
+            selection : ["mage hand"],
+        }
     },
-    description : "I cast the mage hand cantrip without verbal or somatic components and the hand can be invisible. I can shove a creature to or from me if they fail a Strength save. DC 8 + proficiency bonus + Intelligence modifier [+1 Intelligence]",
-};
-FeatsList["telekinetic [wisdom]"] = {
-    name : "Telekinetic [Wisdom]",
-    source : ["UA:POR", 8],
-    prerequisite : " Psionic Talent feature or Wild Talent feat",
-    prereqeval : function() {
-        return GetFeatureChoice('class', 'fighter', 'subclassfeature3').indexOf('Psionic Talent') != -1 || GetFeatureChoice('class', 'rogue', 'subclassfeature3').indexOf('Psionic Talent') != -1 || GetFeatureChoice('class', 'sorcerer', 'subclassfeature1').indexOf('Psionic Talent') != -1;
+    "wisdom" : {
+        description : "I cast the mage hand cantrip without verbal or somatic components and the hand can be invisible. I can shove a creature to or from me if they fail a Strength save. DC 8 + proficiency bonus + Wisdom modifier [+1 Wisdom]",
+        scores : [0, 0, 0, 0, 1, 0],
+        improvements : "Telekinetc (feat): +1 Wisdom;",
+        spellcastingBonus : {
+            name : "Telekinetic",
+            spellcastingAbility : 5,
+            spells : "mage hand",
+            selection : ["mage hand"],
+        }
     },
-    descriptionFull : "You learn to move things with your mind. You gain the following benefits: \n \u2022 Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20. \n \u2022 You learn the mage hand cantrip. You can cast it without verbal or somatic components, and you can make the spectral hand invisible. If you already know this spell, its range grows by 30 feet when you cast it. Its spellcasting ability is the ability increased by this feat. \n \u2022 As a bonus action, you can try to telekinetically shove one creature you can see within 30 feet of you. When you do so, roll your Psionic Talent die, and the target must succeed on a Strength saving throw (DC 8 + your proficiency bonus + the ability modifier of the score increased by this feat) or be moved toward you or away from you a number of feet equal to 5 times the number you rolled. A creature can willingly fail this save.",
-    description : "I cast the mage hand cantrip without verbal or somatic components and the hand can be invisible. I can shove a creature to or from me if they fail a Strength save. DC 8 + proficiency bonus + Wisdom modifier [+1 Wisdom]",
-    scores : [0, 0, 0, 0, 1, 0],
-    spellcastingBonus : {
-        name : "Telekinetic",
-        spellcastingAbility : 5,
-        spells : "mage hand",
-        selection : ["mage hand"],
-    },
-};
-FeatsList["telekinetic [charisma]"] = {
-    name : "Telekinetic [Charisma]",
-    source : ["UA:POR", 8],
-    prerequisite : " Psionic Talent feature or Wild Talent feat",
-    prereqeval : function() {
-        return GetFeatureChoice('class', 'fighter', 'subclassfeature3').indexOf('Psionic Talent') != -1 || GetFeatureChoice('class', 'rogue', 'subclassfeature3').indexOf('Psionic Talent') != -1 || GetFeatureChoice('class', 'sorcerer', 'subclassfeature1').indexOf('Psionic Talent') != -1;
-    },
-    description : "I cast the mage hand cantrip without verbal or somatic components and the hand can be invisible. I can shove a creature to or from me if they fail a Strength save. DC 8 + proficiency bonus + Charisma modifier [+1 Charisma]",
-    descriptionFull : "You learn to move things with your mind. You gain the following benefits: \n \u2022 Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20. \n \u2022 You learn the mage hand cantrip. You can cast it without verbal or somatic components, and you can make the spectral hand invisible. If you already know this spell, its range grows by 30 feet when you cast it. Its spellcasting ability is the ability increased by this feat. \n \u2022 As a bonus action, you can try to telekinetically shove one creature you can see within 30 feet of you. When you do so, roll your Psionic Talent die, and the target must succeed on a Strength saving throw (DC 8 + your proficiency bonus + the ability modifier of the score increased by this feat) or be moved toward you or away from you a number of feet equal to 5 times the number you rolled. A creature can willingly fail this save.",
-    scores : [0, 0, 0, 0, 0, 1],
-    spellcastingBonus : {
-        name : "Telekinetic",
-        spellcastingAbility : 6,
-        spells : "mage hand",
-        selection : ["mage hand"],
-    },
-};
-
-FeatsList["telepathic [intellgience]"] = {
-    name : "Telepathic [Intelligence]",
-    source : ["UA:POR", 8],
-    prerequisite : " Psionic Talent feature or Wild Talent feat",
-    prereqeval : function() {
-        return GetFeatureChoice('class', 'fighter', 'subclassfeature3').indexOf('Psionic Talent') != -1 || GetFeatureChoice('class', 'rogue', 'subclassfeature3').indexOf('Psionic Talent') != -1 || GetFeatureChoice('class', 'sorcerer', 'subclassfeature1').indexOf('Psionic Talent') != -1;
-    },
-    description : "I can telepathically speak to a creature within 30 ft in a language I know and the creature can understand if it knows the language. I can shrink my Psionic Talents die to cast detect thoughts, using my Intelligence [+1 Intelligence]",
-    descriptionFull : "You awaken the ability to mentally connect with others. You gain the following benefits: \n \u2022 Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20. \n \u2022 You can speak telepathically to any creature you can see within 30 feet of you. Your telepathic utterances are in a language you know, and the creature understands you only if it knows that language. Your communication doesn’t give the creature the ability to respond to you telepathically. \n \u2022 If your Psionic Talent die is available, you can cast the detect thoughts spell, requiring no components. When you start casting the spell, your Psionic Talent die shrinks by one die size. Your spellcasting ability for the spell is the ability increased by this feat.",
-    scores : [0, 0, 0, 1, 0, 0],
-    improvements : "Telekinetc (feat): +1 Intelligence;",
-    spellcastingBonus : {
-        name : "Telekinetic",
-        spellcastingAbility : 4,
-        spells : "mage hand",
-        selection : ["mage hand"],
-    }
-};
-FeatsList["telepathic [wisdom]"] = {
-    name : "Telepathic [Wisdom]",
-    source : ["UA:POR", 8],
-    prerequisite : " Psionic Talent feature or Wild Talent feat",
-    prereqeval : function() {
-        return GetFeatureChoice('class', 'fighter', 'subclassfeature3').indexOf('Psionic Talent') != -1 || GetFeatureChoice('class', 'rogue', 'subclassfeature3').indexOf('Psionic Talent') != -1 || GetFeatureChoice('class', 'sorcerer', 'subclassfeature1').indexOf('Psionic Talent') != -1;
-    },
-    description : "I can telepathically speak to a creature within 30 ft in a language I know and the creature can understand if it knows the language. I can shrink my Psionic Talents die to cast detect thoughts, using my Wisdom [+1 Wisdom]",
-    descriptionFull : "You awaken the ability to mentally connect with others. You gain the following benefits: \n \u2022 Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20. \n \u2022 You can speak telepathically to any creature you can see within 30 feet of you. Your telepathic utterances are in a language you know, and the creature understands you only if it knows that language. Your communication doesn’t give the creature the ability to respond to you telepathically. \n \u2022 If your Psionic Talent die is available, you can cast the detect thoughts spell, requiring no components. When you start casting the spell, your Psionic Talent die shrinks by one die size. Your spellcasting ability for the spell is the ability increased by this feat.",
-    scores : [0, 0, 0, 0, 1, 0],
-    improvements : "Telekinetc (feat): +1 Wisdom;",
-    spellcastingBonus : {
-        name : "Telekinetic",
-        spellcastingAbility : 5,
-        spells : "mage hand",
-        selection : ["mage hand"],
-    }
-};
-FeatsList["telepathic [charisma]"] = {
-    name : "Telepathic [Charisma]",
-    source : ["UA:POR", 8],
-    prerequisite : " Psionic Talent feature or Wild Talent feat",
-    prereqeval : function() {
-        return GetFeatureChoice('class', 'fighter', 'subclassfeature3').indexOf('Psionic Talent') != -1 || GetFeatureChoice('class', 'rogue', 'subclassfeature3').indexOf('Psionic Talent') != -1 || GetFeatureChoice('class', 'sorcerer', 'subclassfeature1').indexOf('Psionic Talent') != -1;
-    },
-    description : "I can telepathically speak to a creature within 30 ft in a language I know and the creature can understand if it knows the language. I can shrink my Psionic Talents die to cast detect thoughts, using my Charisma [+1 Charisma]",
-    descriptionFull : "You awaken the ability to mentally connect with others. You gain the following benefits: \n \u2022 Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20. \n \u2022 You can speak telepathically to any creature you can see within 30 feet of you. Your telepathic utterances are in a language you know, and the creature understands you only if it knows that language. Your communication doesn’t give the creature the ability to respond to you telepathically. \n \u2022 If your Psionic Talent die is available, you can cast the detect thoughts spell, requiring no components. When you start casting the spell, your Psionic Talent die shrinks by one die size. Your spellcasting ability for the spell is the ability increased by this feat.",
-    scores : [0, 0, 0, 0, 0, 1],
-    improvements : "Telekinetc (feat): +1 Charisma;",
-    spellcastingBonus : {
-        name : "Telekinetic",
-        spellcastingAbility : 6,
-        spells : "mage hand",
-        selection : ["mage hand"],
+    "charisma" : {
+        description : "I cast the mage hand cantrip without verbal or somatic components and the hand can be invisible. I can shove a creature to or from me if they fail a Strength save. DC 8 + proficiency bonus + Charisma modifier [+1 Charisma]",
+        scores : [0, 0, 0, 0, 0, 1],
+        improvements : "Telekinetc (feat): +1 Charisma;",
+        spellcastingBonus : {
+            name : "Telekinetic",
+            spellcastingAbility : 6,
+            spells : "mage hand",
+            selection : ["mage hand"],
+        }
     }
 };
 
+FeatsList["telepathic"] = {
+    name : "Telepathic",
+    source : ["UA:POR", 8],
+    prerequisite : " Psionic Talent feature or Wild Talent feat",
+    prereqeval : function() {
+        return GetFeatureChoice('class', 'fighter', 'subclassfeature3').indexOf('Psionic Talent') != -1 || GetFeatureChoice('class', 'rogue', 'subclassfeature3').indexOf('Psionic Talent') != -1 || GetFeatureChoice('class', 'sorcerer', 'subclassfeature1').indexOf('Psionic Talent') != -1;
+    },
+    description : "I can telepathically speak to a creature within 30 ft in a language I know and the creature can understand if it knows the language. I can shrink my Psionic Talents die to cast detect thoughts, using the ability score increased [+1 Intelligence, Wisdom, or Charimsa]",
+    descriptionFull : "You awaken the ability to mentally connect with others. You gain the following benefits: \n \u2022 Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20. \n \u2022 You can speak telepathically to any creature you can see within 30 feet of you. Your telepathic utterances are in a language you know, and the creature understands you only if it knows that language. Your communication doesn’t give the creature the ability to respond to you telepathically. \n \u2022 If your Psionic Talent die is available, you can cast the detect thoughts spell, requiring no components. When you start casting the spell, your Psionic Talent die shrinks by one die size. Your spellcasting ability for the spell is the ability increased by this feat.",
+    choices : ["Intelligence", "Wisdom", "Charisma"],
+    "intelligence" : {
+        description : "I can telepathically speak to a creature within 30 ft in a language I know and the creature can understand if it knows the language. I can shrink my Psionic Talents die to cast detect thoughts, using my Intelligence [+1 Intelligence]",
+        scores : [0, 0, 0, 1, 0, 0],
+        improvements : "Telekinetc (feat): +1 Intelligence;",
+        spellcastingBonus : {
+            name : "Telekinetic",
+            spellcastingAbility : 4,
+            spells : "mage hand",
+            selection : ["mage hand"],
+        }
+    },
+    "wisdom" : {
+        description : "I can telepathically speak to a creature within 30 ft in a language I know and the creature can understand if it knows the language. I can shrink my Psionic Talents die to cast detect thoughts, using my Wisdom [+1 Wisdom]",
+        scores : [0, 0, 0, 0, 1, 0],
+        improvements : "Telekinetc (feat): +1 Wisdom;",
+        spellcastingBonus : {
+            name : "Telekinetic",
+            spellcastingAbility : 5,
+            spells : "mage hand",
+            selection : ["mage hand"],
+        }
+    },
+    "charisma" : {
+        description : "I can telepathically speak to a creature within 30 ft in a language I know and the creature can understand if it knows the language. I can shrink my Psionic Talents die to cast detect thoughts, using my Charisma [+1 Charisma]",
+        scores : [0, 0, 0, 0, 0, 1],
+        improvements : "Telekinetc (feat): +1 Charisma;",
+        spellcastingBonus : {
+            name : "Telekinetic",
+            spellcastingAbility : 6,
+            spells : "mage hand",
+            selection : ["mage hand"],
+        }
+    }
+};
 
 FeatsList["tower of iron will"] = {
     name : "Tower of Iron Will",
@@ -560,11 +542,5 @@ FeatsList["wild talent"] = {
         popUpName : "Wild Talent Psionic Talents",
         amendTo : "Wild Talent Psionic Talent Die Rules",
         source : ["UA:POR", 9]
-    }],
-    action : ["bonus action", "Psi Replenishment"],
-    extraLimitedFeatures : {
-        name : "Psi Replenishment",
-        usages : 1, 
-        recovery : "long rest",
-    },
+    }]
 };
