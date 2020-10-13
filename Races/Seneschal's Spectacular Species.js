@@ -143,6 +143,7 @@ RaceList["arachni"] = {
         walk : { spd : 30, enc : 20 },
         climb : { spd : 30, enc : 20 }
     },
+    defaultExcluded : true,
     languageProfs : ["Common", 1],
     weaponsAdd : ["Arachni Bite", "Arachni Claw"],
     vision : ["Darkvision", 60],
