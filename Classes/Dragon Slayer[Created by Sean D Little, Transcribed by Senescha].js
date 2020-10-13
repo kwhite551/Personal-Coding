@@ -16,6 +16,7 @@ ClassList["dragonslayer"] = {
     primaryAbility : "Strength or Dexterity",
     prereqs : "Strength 13 or Dexterity 13 \nProficiency in History, Nature, or Survival skill \nComplete a special task: Killed A Dragon",
     prestigeClassPrereq : 8,
+    defaultExcluded : true,
     die : 10,
     improvements : levels.map(function (n) {return 0}),
     attacks : levels.map(function (n) {return 1}),

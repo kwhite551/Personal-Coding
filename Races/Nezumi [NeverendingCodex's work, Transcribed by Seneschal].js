@@ -17,6 +17,7 @@ RaceList["Nezumi"] = {
     plural : "Nezumi",
     size : 3,
     speed : { walk : { spd : 30, enc : 20 }},
+    defaultExcluded : true,
     languageProfs : ["Common", "Nezumi"],
     weaponsAdd : ["Claws"],
     skills : ["Stealth"],

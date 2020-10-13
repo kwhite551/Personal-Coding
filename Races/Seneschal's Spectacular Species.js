@@ -18,6 +18,7 @@ RaceList["guardianLupin"] = {
     speed : {
         walk : { spd : 35, enc : 25 }
     },
+    defaultExcluded : true,
     languageProfs : ["Common", "Lupin"],
     weaponsAdd : ["Lupin's Bite", "Lupin's Claws"],
     vision : [["Darkvision", 60], ["Keen Smell and Hearing", 0]],
@@ -50,6 +51,7 @@ RaceList["oratorLupin"] = {
     speed : {
         walk : { spd : 35, enc : 25 }
     },
+    defaultExcluded : true,
     languageProfs : ["Common", "Lupin"],
     weaponsAdd : ["Lupin's Bite", "Lupin's Claws"],
     vision : [["Darkvision", 60], ["Keen Smell and Hearing", 0]],
@@ -109,6 +111,7 @@ RaceList["warriorLupin"] = {
     speed : {
         walk : { spd : 35, enc : 25 }
     },
+    defaultExcluded : true,
     languageProfs : ["Common", "Lupin"],
     weaponsAdd : ["Lupin's Bite", "Lupin's Claws"],
     weaponProfs : [false, false, ["3 marital weapons of your choice"]],
