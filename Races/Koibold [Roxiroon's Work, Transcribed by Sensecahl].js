@@ -18,7 +18,6 @@ RaceList["koibold"] = {
         walk : { spd : 30, enc : 20},
         swim : { spd : 30, enc : 20}
     },
-    defaultExcluded : true,
     languageProfs : ["Common", "Draconic", "Aquan"],
     vision : [["Darkvision", 60]],
     age : "Koibolds reach adulthood at age 6 and can live up to 160 years.",

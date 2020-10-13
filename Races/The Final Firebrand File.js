@@ -10,7 +10,7 @@ SourceList["P:TF"] = { //Object name; This is the way the source is called upon,
 
 //Creating firebrand Object
 RaceList["firebrand"] = {
-	regExpSearch : /^(?=.*Firebrand).*$/i,
+	regExpSearch : /^(?=.*Firebrand)(?=.*firebrand).*$/i,
 		name : "Firebrand",
 		source : [["P:TF", 0]],
 		plural : "Firebrand",
@@ -19,10 +19,9 @@ RaceList["firebrand"] = {
 			walk : { spd : 30, enc : 20 },
 			fly : { spd : 40, enc : 30 },
 		},
-		defaultExcluded : true,
 		languageProfs : ["Common", "Draconic"],
 		vision : [["Darkvision,", 60]],
-		weaponprofs : [false, false, ["Four Weapons of Your Choice"]],
+		weaponprofs : [false, false, ["Put your four weapons here"]],
 		armor : [false, true, true, false],
 		weaponOptions : {
 			regExpSearch : /^(?=.*Draconic)(?=.*Fury).*$/i,
@@ -45,7 +44,7 @@ RaceList["firebrand"] = {
 		weightMetric : " weigh around 110 kg (80 + 5d8 \xD7 4d6 / 10 kg)",
 		scores : [0, 0, 0, 0, 0, 2],
 		improvements : "+2 Charimsa, +1 to two stats of your choice",
-		trait : "Firebrand: (+2 Charimsa, +1 to two stats of your choice)\nDraconic Ancestry: Choose one type of dragon using the \"Racial Options\" button. I gain a breath weapon and damage resistance as determined by the dragon type chosen.\nBreath Weapon: Exhale destructive energy As a bonus action with a size, shape, saving throw type, and damage type as found in the table. All in the area must make a saving throw with DC 8 + Con modifier + prof bonus. It does 2d8 (+1d8 at level 3, 5, 7, 11, 13, 15. 17, 19) damage, half as much damage on a successful save. I can use it again after a long rest. \nTrance: Firebrand meditate 4 hours a day semiconscious. You regain the same benefits a human does from 8 hours of sleep for a long rest after resting with a trance."
+		trait : "firebrand: (+2 Charimsa, +1 to two stats of your choice)\nDraconic Ancestry: Choose one type of dragon using the \"Racial Options\" button. I gain a breath weapon and damage resistance as determined by the dragon type chosen.\nBreath Weapon: Exhale destructive energy As a bonus action with a size, shape, saving throw type, and damage type as found in the table. All in the area must make a saving throw with DC 8 + Con modifier + prof bonus. It does 2d8 (+1d8 at level 3, 5, 7, 11, 13, 15. 17, 19) damage, half as much damage on a successful save. I can use it again after a long rest. \nTrance: Firebrand meditate 4 hours a day semiconscious. You regain the same benefits a human does from 8 hours of sleep for a long rest after resting with a trance."
 		+ "\n" + "Draconic Tactics: As a bonus action, you can call out to one ally who can hear or see you in a 30 foot radius. As a reaction, they can move up to their current movement speed and make one attack."
 		+ "\n" + "Draconic Inspiration: Any ally within 30 feet of you has advantage on Wisdom saving throw against being frightened.",
 		features : {
@@ -94,8 +93,8 @@ AddRacialVariant("firebrand", "black", {
 		plural : "Black Firebrand",
 		source : [["P:TF", 0]],
 		improvements : "+2 Charimsa, +1 to two stats of your choice",
-		trait : "Black Firebrand (+2 Charimsa, +1 to two stats of your choice)"
-		+ "\n" + "Trance: Firebrand meditate 4 hours a day semiconscious. You regain the same benefits a human does from 8 hours of sleep for a long rest after resting with a trance."
+		trait : "Black firebrand (+2 Charimsa, +1 to two stats of your choice)"
+		+ "\n" + "Trance: firebrand meditate 4 hours a day semiconscious. You regain the same benefits a human does from 8 hours of sleep for a long rest after resting with a trance."
 		+ "\n" + "Acid Breath Weapon:"
 		+ "\n   " + "As a bonus action, I exhale destructive energy in a 5 ft by 30 ft line."
 		+ "\n   " + "All in the area must make a Dex saving throw with DC 8 + Con modifier + prof bonus."
@@ -110,8 +109,8 @@ AddRacialVariant("firebrand" , "blue", {
 		plural : "Blue Firebrand",
 		source : [["P:TF", 0]],
 		improvements : "+2 Charimsa, +1 to two stats of your choice",
-		trait : "Blue Firebrand (+2 Charimsa, +1 to two stats of your choice)"
-		+ "\n" + "Trance: Firebrand meditate 4 hours a day semiconscious. You regain the same benefits a human does from 8 hours of sleep for a long rest after resting with a trance."
+		trait : "Blue firebrand (+2 Charimsa, +1 to two stats of your choice)"
+		+ "\n" + "Trance: firebrand meditate 4 hours a day semiconscious. You regain the same benefits a human does from 8 hours of sleep for a long rest after resting with a trance."
 		+ "\n" + "Draconic Tactics: As a bonus action, you can call out to one ally who can hear or see you in a 30 foot radius. As a reaction, they can move up to their current movement speed and make one attack."
 		+ "\n" + "Draconic Inspiration: Any ally within 30 feet of you has advantage on Wisdom saving throw agaisnt being frightened."
 		+ "\n" + "Lightning Breath Weapon:"
@@ -128,8 +127,8 @@ AddRacialVariant("firebrand", "brass", {
 		plural : "Brass Firebrand",
 		source : [["P:TF", 0]],
 		improvements : "+2 Charimsa, +1 to two stats of your choice",
-		trait : "Brass Firebrand (+2 Charimsa, +1 to two stats of your choice)"
-		+ "\n" + "Trance: Firebrand meditate 4 hours a day semiconscious. You regain the same benefits a human does from 8 hours of sleep for a long rest after resting with a trance."
+		trait : "Brass firebrand (+2 Charimsa, +1 to two stats of your choice)"
+		+ "\n" + "Trance: firebrand meditate 4 hours a day semiconscious. You regain the same benefits a human does from 8 hours of sleep for a long rest after resting with a trance."
 		+ "\n" + "Draconic Tactics: As a bonus action, you can call out to one ally who can hear or see you in a 30 foot radius. As a reaction, they can move up to their current movement speed and make one attack."
 		+ "\n" + "Draconic Inspiration: Any ally within 30 feet of you has advantage on Wisdom saving throw agaisnt being frightened."
 		+ "\n" + "Fire Breath Weapon:"
@@ -146,8 +145,8 @@ AddRacialVariant("firebrand", "bronze", {
 		plural : "Bronze Firebrand",
 		source : [["P:TF", 0]],
 		improvements : "+2 Charimsa, +1 to two stats of your choice",
-		trait : "Bronze Firebrand (+2 Charimsa, +1 to two stats of your choice)"
-		+ "\n" + "Trance: Firebrand meditate 4 hours a day semiconscious. You regain the same benefits a human does from 8 hours of sleep for a long rest after resting with a trance."
+		trait : "Bronze firebrand (+2 Charimsa, +1 to two stats of your choice)"
+		+ "\n" + "Trance: firebrand meditate 4 hours a day semiconscious. You regain the same benefits a human does from 8 hours of sleep for a long rest after resting with a trance."
 		+ "\n" + "Draconic Tactics: As a bonus action, you can call out to one ally who can hear or see you in a 30 foot radius. As a reaction, they can move up to their current movement speed and make one attack."
 		+ "\n" + "Draconic Inspiration: Any ally within 30 feet of you has advantage on Wisdom saving throw agaisnt being frightened."
 		+ "\n" + "Lightning Breath Weapon:"
@@ -164,8 +163,8 @@ AddRacialVariant("firebrand", "copper", {
 		plural : "Copper Firebrand",
 		source : [["P:TF", 0]],
 		improvements : "+2 Charimsa, +1 to two stats of your choice",
-		trait : "Copper Firebrand (+2 Charimsa, +1 to two stats of your choice)"
-		+ "\n" + "Trance: Firebrand meditate 4 hours a day semiconscious. You regain the same benefits a human does from 8 hours of sleep for a long rest after resting with a trance."
+		trait : "Copper firebrand (+2 Charimsa, +1 to two stats of your choice)"
+		+ "\n" + "Trance: firebrand meditate 4 hours a day semiconscious. You regain the same benefits a human does from 8 hours of sleep for a long rest after resting with a trance."
 		+ "\n" + "Draconic Tactics: As a bonus action, you can call out to one ally who can hear or see you in a 30 foot radius. As a reaction, they can move up to their current movement speed and make one attack."
 		+ "\n" + "Draconic Inspiration: Any ally within 30 feet of you has advantage on Wisdom saving throw agaisnt being frightened."
 		+ "\n" + "Acid Breath Weapon:"
@@ -182,8 +181,8 @@ AddRacialVariant("firebrand", "gold", {
 		plural : "Gold Firebrand",
 		source : [["P:TF", 0]],
 		improvements : "+2 Charimsa, +1 to two stats of your choice",
-		trait : "Gold Firebrand (+2 Charimsa, +1 to two stats of your choice)"
-		+ "\n" + "Trance: Firebrand meditate 4 hours a day semiconscious. You regain the same benefits a human does from 8 hours of sleep for a long rest after resting with a trance."
+		trait : "Gold firebrand (+2 Charimsa, +1 to two stats of your choice)"
+		+ "\n" + "Trance: firebrand meditate 4 hours a day semiconscious. You regain the same benefits a human does from 8 hours of sleep for a long rest after resting with a trance."
 		+ "\n" + "Draconic Tactics: As a bonus action, you can call out to one ally who can hear or see you in a 30 foot radius. As a reaction, they can move up to their current movement speed and make one attack."
 		+ "\n" + "Draconic Inspiration: Any ally within 30 feet of you has advantage on Wisdom saving throw agaisnt being frightened."
 		+ "\n" + "Fire Breath Weapon:"
@@ -200,8 +199,8 @@ AddRacialVariant("firebrand", "green", {
 		plural : "Green Firebrand",
 		source : [["P:TF", 0]],
 		improvements : "+2 Charimsa, +1 to two stats of your choice",
-		trait : "Green Firebrand (+2 Charimsa, +1 to two stats of your choice)"
-		+ "\n" + "Trance: Firebrand meditate 4 hours a day semiconscious. You regain the same benefits a human does from 8 hours of sleep for a long rest after resting with a trance."
+		trait : "Green firebrand (+2 Charimsa, +1 to two stats of your choice)"
+		+ "\n" + "Trance: firebrand meditate 4 hours a day semiconscious. You regain the same benefits a human does from 8 hours of sleep for a long rest after resting with a trance."
 		+ "\n" + "Draconic Tactics: As a bonus action, you can call out to one ally who can hear or see you in a 30 foot radius. As a reaction, they can move up to their current movement speed and make one attack."
 		+ "\n" + "Draconic Inspiration: Any ally within 30 feet of you has advantage on Wisdom saving throw agaisnt being frightened."
 		+ "\n" + "Poison Breath Weapon:"
@@ -218,8 +217,8 @@ AddRacialVariant("firebrand", "red", {
 		plural : "Red Firebrand",
 		source : [["P:TF", 0]],
 		improvements : "+2 Charimsa, +1 to two stats of your choice",
-		trait : "Red Firebrand (+2 Charimsa, +1 to two stats of your choice)"
-		+ "\n" + "Trance: Firebrand meditate 4 hours a day semiconscious. You regain the same benefits a human does from 8 hours of sleep for a long rest after resting with a trance."
+		trait : "Red firebrand (+2 Charimsa, +1 to two stats of your choice)"
+		+ "\n" + "Trance: firebrand meditate 4 hours a day semiconscious. You regain the same benefits a human does from 8 hours of sleep for a long rest after resting with a trance."
 		+ "\n" + "Draconic Tactics: As a bonus action, you can call out to one ally who can hear or see you in a 30 foot radius. As a reaction, they can move up to their current movement speed and make one attack."
 		+ "\n" + "Draconic Inspiration: Any ally within 30 feet of you has advantage on Wisdom saving throw agaisnt being frightened."
 		+ "\n" + "Fire Breath Weapon:"
@@ -232,12 +231,12 @@ AddRacialVariant("firebrand", "red", {
 });
 AddRacialVariant("firebrand", "silver", {
 		regExpSearch : /silver/i,
-		name : "Silver Firebrand",
-		plural : "Silver Firebrand",
+		name : "Silver firebrand",
+		plural : "Silver firebrand",
 		source : [["P:TF", 0]],
 		improvements : "+2 Charimsa, +1 to two stats of your choice",
-		trait : "Silver Firebrand (+2 Charimsa, +1 to two stats of your choice)"
-		+ "\n" + "Trance: Firebrand meditate 4 hours a day semiconscious. You regain the same benefits a human does from 8 hours of sleep for a long rest after resting with a trance."
+		trait : "Silver firebrand (+2 Charimsa, +1 to two stats of your choice)"
+		+ "\n" + "Trance: firebrand meditate 4 hours a day semiconscious. You regain the same benefits a human does from 8 hours of sleep for a long rest after resting with a trance."
 		+ "\n" + "Draconic Tactics: As a bonus action, you can call out to one ally who can hear or see you in a 30 foot radius. As a reaction, they can move up to their current movement speed and make one attack."
 		+ "\n" + "Draconic Inspiration: Any ally within 30 feet of you has advantage on Wisdom saving throw agaisnt being frightened."
 		+ "\n" + "Cold Breath Weapon:"
@@ -254,8 +253,8 @@ AddRacialVariant("firebrand", "white", {
 		plural : "White Firebrand",
 		source : [["P:TF", 0]],
 		improvements : "+2 Charimsa, +1 to two stats of your choice",
-		trait : "White Firebrand (+2 Charimsa, +1 to two stats of your choice)"
-		+ "\n" + "Trance: Firebrand meditate 4 hours a day semiconscious. You regain the same benefits a human does from 8 hours of sleep for a long rest after resting with a trance."
+		trait : "White firebrand (+2 Charimsa, +1 to two stats of your choice)"
+		+ "\n" + "Trance: firebrand meditate 4 hours a day semiconscious. You regain the same benefits a human does from 8 hours of sleep for a long rest after resting with a trance."
 		+ "\n" + "Draconic Tactics: As a bonus action, you can call out to one ally who can hear or see you in a 30 foot radius. As a reaction, they can move up to their current movement speed and make one attack."
 		+ "\n" + "Draconic Inspiration: Any ally within 30 feet of you has advantage on Wisdom saving throw agaisnt being frightened."
 		+ "\n" + "Cold Breath Weapon:"

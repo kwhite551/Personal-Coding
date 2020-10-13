@@ -13,7 +13,6 @@ AddSubClass("blood hunter", "soulforged", {
     regExpSearch : /^(?=.*blood)(?=.*hunter)(?=.*soulforged).*$/i,
     subname : "Order of the Soulforged",
     source : [["S:OS", 1]],
-    defaultExcluded : true,
     features : {
         "subclassfeature3" : {
             name : "Forging the Soul",

@@ -12,7 +12,6 @@ RaceList["firebrand"] = {
 			walk : { spd : 30, enc : 20 },
 			fly : { spd : 40, enc : 30 },
 		},
-		defaultExcluded : true,
 		languageProfs : ["Common", "Draconic"],
 		vision : [["Darkvision,", 60]],
 		weaponprofs : [false, false, ["Put your four weapons here"]],

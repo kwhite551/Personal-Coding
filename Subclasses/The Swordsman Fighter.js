@@ -30,7 +30,6 @@ AddSubClass("fighter", "swordsman", {
 	source : ["S:TSMA", 0],
 	fullname : "Figher (Swordsman)",
 	subname : "Swordsman",
-	defaultExcluded : true,
 	abilitySave : 2,
 	ablitySaveAlt : 5,
 	features : {

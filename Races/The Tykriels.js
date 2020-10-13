@@ -18,7 +18,6 @@ RaceList["tykriel"] = {
 	speed : {
 		walk : { spd : 30, enc : 20 },
 	},
-	defaultExcluded : true,
 	toolProfs : ["Tinker's Tools"],
 	languageProfs : ["Common", "Tykriel", 1],
 	weaponprofs : [false, false, ["Light Crossbows", "Heavy Crossbows", "Hand Crossbows"]],

@@ -37,7 +37,6 @@ RaceList["vespidan drone"] = {
         walk : { spd : 25, enc : 15 },
         climb : { spd : 30, enc : 20 }
     },
-    defaultExcluded : true,
     languageProfs : ["Common", "Elvish"],
     armorOptions : {
         regExpSearch : /carapace/i,
@@ -90,7 +89,6 @@ RaceList["vespidan queen"] = {
         walk : { spd : 30, enc : 20},
         climb : { spd : 20, enc : 10}
     },
-    defaultExcluded : true,
     languageProfs : ["Common", "Elvish"],
     weaponsAdd : ["sting"],
     armorOptions : {
@@ -141,7 +139,6 @@ RaceList["vespidan worker"] = {
         walk : { spd : 30, enc : 20},
         climb : { spd : 20, enc : 10}
     },
-    defaultExcluded : true,
     languageProfs : ["Common", "Elvish"],
     toolProfs : [["Tool Proficiency", 1]],
     weaponsAdd : ["sting"],

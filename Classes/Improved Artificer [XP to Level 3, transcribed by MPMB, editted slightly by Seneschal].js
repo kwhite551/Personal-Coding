@@ -108,7 +108,6 @@ ClassList["improved artificer"] = {
 	prereqs : "Intelligence 13",
 	improvements : [0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 5, 5, 5],
 	die : 8,
-	defaultExcluded : true,
 	saves : ["Con", "Int"],
 	skillstxt : {
 		primary : "Choose three from Arcana, Deception, History, Investigation, Medicine, Nature, Religion, and Sleight of Hand",

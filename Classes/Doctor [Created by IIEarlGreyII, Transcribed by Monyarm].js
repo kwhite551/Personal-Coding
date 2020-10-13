@@ -18,7 +18,6 @@ ClassList["doctor"] = {
   primaryAbility: "Intelligence and Dexterity",
   prereqs: "Intelligence 13 or Dexterity 13",
   die: 8,
-  defaultExcluded : true,
   improvements: [0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 5, 5],
   saves: ["Int", "Con"],
   skillstxt: {

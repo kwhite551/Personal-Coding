@@ -45,7 +45,7 @@ WeaponsList["dire flail"] = {
     damage : [1, 8, "bludgeoning"],
     range : "Melee",
     weight : 10,
-    description : "two-handed; Target disadv. on save vs. knocked prone/disarmed; Can count as dual-wielding",
+    description : "two-Handed; Target disadv. on save vs. knocked prone/disarmed; Can count as dual-wielding",
     abilitytodamage : true
 };
 WeaponsList["double mace"] = {

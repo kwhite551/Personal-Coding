@@ -39,7 +39,6 @@ RaceList["clanlupin"] = { //Object name; Note the use of only lower case! Also n
 	speed : {
 		walk : { spd : 40, enc : 30 }
 	},
-	defaultExcluded : true,
 	languageProfs : ["Lupin (Clan)", 1],
 	weaponsAdd : ["Lupin's Bite", "Lupin's Claws"],
 	vision : [["Darkvision,", 60]],

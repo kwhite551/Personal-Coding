@@ -43,7 +43,6 @@ RaceList["wolfFerra"] = {
 	savetxt : {
 		text : ["Athletics", "Proficient when sprinting"]
 	},
-	defaultExcluded : true,
 	skills : ["Perception"],
 	age : " mature physically and mentally by 10 years and live up to 350 years.",
 	height : " range from under 5 to 6 feet tall (4'8\" + 2d6\")",

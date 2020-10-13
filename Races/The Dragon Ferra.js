@@ -37,7 +37,6 @@ RaceList["feral dragon ferra"] = {
 		walk : { spd : 30, enc : 20 },
 		fly : { spd : 30, enc : 20 }
 	},
-	defaultExcluded : true,
 	languageProfs : ["Common", "Draconic"],
 	weaponsAdd : ["Breath Weapon"],
 	weaponOptions : {

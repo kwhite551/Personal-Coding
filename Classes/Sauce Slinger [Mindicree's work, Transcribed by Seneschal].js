@@ -15,7 +15,6 @@ ClassList["slinger"] = {
     source : ["M:SS", 0],
     primaryAbility : "Strength and Constitution",
     prereqs : "",
-    defaultExcluded : true,
     die : 6,
     improvements : [0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 5, 5],
     saves : ["Str", "Con"],

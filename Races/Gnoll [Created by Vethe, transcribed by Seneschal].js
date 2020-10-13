@@ -19,7 +19,6 @@ RaceList["gnoll-blackfang"] = {
     speed : {
         walk : { spd : 30, enc : 20 }
     },
-    defaultExcluded : true,
     languageProfs : ["Common", "Abyssal"],
     vision : [["Darkvision", 60]],
     weapons : ["Gnoll Bite"],

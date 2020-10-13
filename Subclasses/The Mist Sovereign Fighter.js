@@ -32,7 +32,6 @@ AddSubClass("fighter", "mistsovereign", {
     regExpSearch : /mist sovereign/i,
     subname : "Mist Sovereign",
     source : ["G:FMS", 0],
-    defaultExcluded : true,
     features : {
         "subclassfeature3" : {
             name : "Silent Sulker",
@@ -40,8 +39,8 @@ AddSubClass("fighter", "mistsovereign", {
             minlevel : 3,
             skills : ["Stealth"],
             description : desc([
-                "I am proficiency in Stealth if I wasn't already",
-                "It cost no extra movement to move stealthily"
+                "I can proficiency in Stealth if I didn't already",
+                "Moving Stealthily doesn't cost me any extra movement"
             ])
         },
         "subclassfeature3.1" : {
@@ -58,7 +57,8 @@ AddSubClass("fighter", "mistsovereign", {
                 "I gain the ability to cast the misty step spell",
                 "When I cast it, I can melee attack one creature within range of destination",
                 "If the attack hits, target has disadv. on their next attack roll",
-                "I can use this feature twice per long rest and this increases to three times at 10th",
+                "I can use this feature twice per long rest",
+                "This increases to three times at 10th level"
             ]),
             usages : levels.map(function(n){
                 return n < 10 ? 2 : 3;
@@ -79,8 +79,8 @@ AddSubClass("fighter", "mistsovereign", {
             recovery : "short rest",
             description : desc([
                 "Mists surround me, making me lightly obscured",
-                "The mists have HP equal to my Fighter level x 2",
-                "If I get hit by a weapon attack, the mists take damage",
+                "The mists have HP equal to Fighter level x 2",
+                "If I get hit by a weapon attack, the mists take the damage",
                 "If mist HP is reduced to 0, I take leftover damage",
                 "the mist regains all lost HP after a short or long rest"
             ])
@@ -90,9 +90,9 @@ AddSubClass("fighter", "mistsovereign", {
             source : ["G:FMS", 1],
             minlevel : 15,
             description : desc([
-                "I no longer trigger attacks of opportunitiy",
-                "I cna move through a creature's space without extra movement",
-                "Allies  move through my space with no extra movement"
+                "I no longer trigger attacks of opportunitiy and can move",
+                "through spaces creatures occupy without extra movement",
+                "My allies can move through my space without extra movement"
             ])
         },
         "subclassfeature18" : {
@@ -102,9 +102,9 @@ AddSubClass("fighter", "mistsovereign", {
             description : desc([
                 "As an action, I can summon myths in a 30 ft radius centered on me",
                 "My movement increases by 20 ft and I am heavily obscured in this area",
-                "All hostile creatures lose sense of direction",
-                "They take 2d8 poison damage if they start their turn in the mist",
-                "My Mantle of Fog current and max hit points are doubled while in this area",
+                "All hostile creatures lose sense of direction and take 2d8 poison dmg.",
+                "at the start of each of their turns.",
+                "My Mantle of Fog current HP and Max HP is doubled while in this area",
                 "I can use this feature once per long rest"
             ]),
             usages : 1,
