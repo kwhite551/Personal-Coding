@@ -38,6 +38,7 @@ RaceList["lupin"] = { //Object name; Note the use of only lower case! Also note 
 	speed : {
 		walk : { spd : 35, enc : 25 }
 	},
+	defaultExcluded : true,
 	languageProfs : ["Common", "Lupin", 1],
 	weaponsAdd : ["Lupin's Bite", "Lupin's Claws"],
 	vision : [["Darkvision,", 60]],

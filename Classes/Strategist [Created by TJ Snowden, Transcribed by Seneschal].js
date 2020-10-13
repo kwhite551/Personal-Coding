@@ -29,7 +29,7 @@ ClassList["strategist"] = {
         primary : [true, true, false]
     },
     toolProfs : [["Gaming Set", 2]],
-    equpiment : "Strategist starting equipment" +
+    equipment : "Strategist starting equipment" +
     "\n \u2022 Scalemail -or- leather armor;" +
     "\n \u2022 A martial weapon and shield -or- a longbow and a quiver of 20 arrows;" +
     "\n \u2022 Two handaxes -or- two daggers;" +

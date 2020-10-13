@@ -19,6 +19,7 @@ RaceList["alomri"] = {
     speed : {
         walk : { spd : 30, enc : 20}
     },
+    defaultExcluded : true,
     weaponProfs : [false, false, ["longsword", "longbow"]],
     toolProfs : [["Musical Instrument", 1]],
     languageProfs : ["Common", 1],
