@@ -6,8 +6,9 @@ SourceList["SDL:DS"] = {
     abbreviation : "SDL:DS",
     group : "Dungeon Masters Guild",
     url : "https://www.dmsguild.com/product/183451/Dragon-Slayer-Prestige-Class",
+    defaultExcluded : true,
     date : "2016/05/17"
-}
+};
 
 ClassList["dragonslayer"] = {
     regExpSearch : /dragon slayer/i,
@@ -16,7 +17,6 @@ ClassList["dragonslayer"] = {
     primaryAbility : "Strength or Dexterity",
     prereqs : "Strength 13 or Dexterity 13 \nProficiency in History, Nature, or Survival skill \nComplete a special task: Killed A Dragon",
     prestigeClassPrereq : 8,
-    defaultExcluded : true,
     die : 10,
     improvements : levels.map(function (n) {return 0}),
     attacks : levels.map(function (n) {return 1}),

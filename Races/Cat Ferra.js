@@ -5,6 +5,7 @@ SourceList["DnD-B:N"] = {
 	name : "D&D Beyond: Neko",
 	abbreviation : "DnD-B:N",
 	group : "D&D Beyond",
+	defaultExcluded : true,
 	url : "https://www.dndbeyond.com/races/21001-neko",
 	date : "2018/04/11"
 };
@@ -19,7 +20,6 @@ RaceList["catFerra"] = {
 	speed : {
 		walk : { spd : 30, enc : 20 }
 	},
-	defaultExcluded : true,
 	languageProfs : ["Common", 1],
 	vision : [["Darkvision", 60], ["Cat's Hearing: Advantage on Wisdom(Perception) checks that involve hearing while all four of ears aren't covered", ""]],
 	skills : ["Perception", "Stealth"],

@@ -24,8 +24,9 @@ SourceList["NPD:V"] = {
     abbreviation : "NPD:V",
     group : "Reddit/r/UnearthedArcana",
     url : "https://www.reddit.com/r/UnearthedArcana/comments/dwacom/vespidan_the_waspfey_player_race_spelling/",
-    date : "2019/11/15"
-}
+    date : "2019/11/15",
+    defaultExcluded : true
+};
 
 RaceList["vespidan drone"] = {
     regExpSearch : /^(?=.*vespidan)(?=.*drone).*$/i,
@@ -37,7 +38,6 @@ RaceList["vespidan drone"] = {
         walk : { spd : 25, enc : 15 },
         climb : { spd : 30, enc : 20 }
     },
-    defaultExcluded : true,
     languageProfs : ["Common", "Elvish"],
     armorOptions : {
         regExpSearch : /carapace/i,
@@ -90,7 +90,6 @@ RaceList["vespidan queen"] = {
         walk : { spd : 30, enc : 20},
         climb : { spd : 20, enc : 10}
     },
-    defaultExcluded : true,
     languageProfs : ["Common", "Elvish"],
     weaponsAdd : ["sting"],
     armorOptions : {
@@ -141,7 +140,6 @@ RaceList["vespidan worker"] = {
         walk : { spd : 30, enc : 20},
         climb : { spd : 20, enc : 10}
     },
-    defaultExcluded : true,
     languageProfs : ["Common", "Elvish"],
     toolProfs : [["Tool Proficiency", 1]],
     weaponsAdd : ["sting"],

@@ -5,8 +5,9 @@ SourceList["K:T"] = { //Object name; This is the way the source is called upon, 
 	name : "Kar's Tykriel", //Required; The name of the source as written in full. This will be used in the tooltips/mouseover text.
 	abbreviation : "K:T", //Required; The abbreviation of the source. This can only be letters and a colon! This will be used to refer to the source in the form fields //Note that this doesn't have to be the same as the way the source is called upon, but it can be for convenience
 	group : "Friendly Bunch Homebrew", //Optional; Adding this will make the sheet put the source into a group when using the "Sources" function where you can include/exclude sources. // The default options for this are "Unearthed Arcana", "Official Sources", "Official Sources (small)", and "default". // If you enter "default", the source can't be excluded using the "Sources" function
+	defaultExcluded : true,
 	date : "2019/09/24", //Optional; the date of the resource, written as year/month/day
-}
+};
 
 RaceList["tykriel"] = {
 	regExpSearch : /tykriel/i,
@@ -18,7 +19,6 @@ RaceList["tykriel"] = {
 	speed : {
 		walk : { spd : 30, enc : 20 },
 	},
-	defaultExcluded : true,
 	toolProfs : ["Tinker's Tools"],
 	languageProfs : ["Common", "Tykriel", 1],
 	weaponprofs : [false, false, ["Light Crossbows", "Heavy Crossbows", "Hand Crossbows"]],

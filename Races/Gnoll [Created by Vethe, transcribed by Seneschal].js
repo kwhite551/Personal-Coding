@@ -6,6 +6,7 @@ SourceList["V:G"] = {
     abbreviation : "V:G",
     group : "Reddit/r/UnearthedArcana",
     url : "https://www.gmbinder.com/share/-Lr7GJuwTIEVfahizNbG",
+    defaultExcluded : true,
     date : "2020/04/24"
 };
 
@@ -19,7 +20,6 @@ RaceList["gnoll-blackfang"] = {
     speed : {
         walk : { spd : 30, enc : 20 }
     },
-    defaultExcluded : true,
     languageProfs : ["Common", "Abyssal"],
     vision : [["Darkvision", 60]],
     weapons : ["Gnoll Bite"],

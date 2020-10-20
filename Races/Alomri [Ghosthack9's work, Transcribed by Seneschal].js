@@ -5,9 +5,10 @@ SourceList["GH:A"] = {
     name : "Ghosthack9: Alomri",
     abbreviation : "GH:A",
     group : "Reddit/r/UnearthedArcana",
+    defaultExcluded : true,
     url : "https://www.reddit.com/r/UnearthedArcana/comments/feqw0e/alomri_the_homebrew_race_we_need_because_we_all/",
     date : "2020/03/07"
-}
+};
 
 RaceList["alomri"] = {
     regExpSearch : /alomri/i,
@@ -19,7 +20,6 @@ RaceList["alomri"] = {
     speed : {
         walk : { spd : 30, enc : 20}
     },
-    defaultExcluded : true,
     weaponProfs : [false, false, ["longsword", "longbow"]],
     toolProfs : [["Musical Instrument", 1]],
     languageProfs : ["Common", 1],

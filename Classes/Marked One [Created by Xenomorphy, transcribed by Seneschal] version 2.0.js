@@ -5,6 +5,7 @@ SourceList["X:TMO"] = {
 	name : "/u/Xenomorphy000: The Marked One",
 	abbreviation : "X:TMO",
 	group: "Reddit/r/UnearthedArcana",
+	defaultExcluded : true,
 	url : "https://www.reddit.com/r/UnearthedArcana/comments/csgn33/marked_one_v23_a_dishonored_inspired_class/",
 	date : "2019/08/19"
 }
@@ -16,7 +17,6 @@ ClassList["themarkedone"] = {
 	primaryAbility : "Charisma",
 	prereqs : "",
 	die : 8,
-	defaultExcluded : true,
 	improvements : [0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 5, 5],
 	saves : ["Dex", "Cha"],
 	skillstxt : {

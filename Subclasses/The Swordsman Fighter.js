@@ -21,8 +21,9 @@ SourceList["S:TSMA"] = {
 	name : "Seneschal: The Swordsman Martial Archetype",
 	abbreviation : "S:TSMA",
 	group: "Friendly Bunch Homebrew",
-	date : "2019/09/27"
-}
+	date : "2019/09/27",
+	defaultExcluded : true
+};
 
 AddSubClass("fighter", "swordsman", {
 	regExpSearch : /swordsman/i,

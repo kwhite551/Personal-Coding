@@ -41,6 +41,7 @@ SourceList["XPtL3:IA"] = {
 	abbreviation : "XPtL3:IA",
 	group : "XP to Level 3",
 	url : "https://drive.google.com/file/d/1jeqp5Ls9paEh0yZ0vyhJRoNKCJ4yARf2/view?usp=drive_open",
+	defaultExcluded : true,
 	date : "2018/08/08"
 };
 
@@ -108,7 +109,6 @@ ClassList["improved artificer"] = {
 	prereqs : "Intelligence 13",
 	improvements : [0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 5, 5, 5],
 	die : 8,
-	defaultExcluded : true,
 	saves : ["Con", "Int"],
 	skillstxt : {
 		primary : "Choose three from Arcana, Deception, History, Investigation, Medicine, Nature, Religion, and Sleight of Hand",

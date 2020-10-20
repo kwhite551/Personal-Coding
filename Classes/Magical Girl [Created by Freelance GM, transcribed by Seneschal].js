@@ -5,6 +5,7 @@ SourceList["FGM:MG"] = {
 	name : "Freelance GM: Magical Girl",
 	abbreviation : "FGM:MG",
 	group : "Giant in the Playground forums",
+	defaultExcluded : true,
 	url : "http://www.giantitp.com/forums/showthread.php?444516-Base-Class-Magical-Girl-(AKA-quot-Help-me-I-ve-done-something-terrible!-quot-)",
 	date : "2015/09/22"
 }
@@ -16,7 +17,6 @@ ClassList["magicalgirl"] = {
 	primaryAbility : "Constiution, Charisma",
 	prereqs : "",
 	die : 8,
-	defaultExcluded : true,
 	improvements : [0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 5, 5],
 	saves : ["Con", "Cha"],
 	skillstxt : {

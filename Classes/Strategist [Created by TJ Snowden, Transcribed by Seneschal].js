@@ -6,6 +6,7 @@ SourceList["TJS:TS"] = {
     abbreviation : "TJS:TS",
     group : "Dungeon Masters Guild",
     url : "https://www.dmsguild.com/product/208785/Strategist-Class",
+    defaultExcluded : true,
     date : "2017/04/01"
 };
 

@@ -5,7 +5,8 @@ SourceList["JM:EAG"] = {
 	name : "Jason Mendell - Expanded Armory and Gear II",
 	abbreviation : "JM:EAGII",
 	group : "Dungeon Masters Guild",
-	url : "https://www.dmsguild.com/product/179621/DD-5e--Expanded-Armory--Gear-Vol-2",
+    url : "https://www.dmsguild.com/product/179621/DD-5e--Expanded-Armory--Gear-Vol-2",
+    defaultExcluded : true,
 	date : "2020/02/04"
 };
 

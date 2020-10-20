@@ -25,14 +25,14 @@ SourceList["G:FMS"] = {
     abbreviation : "G:FMS",
     group : "Reddit/r/UnearthedArcana",
     url : "https://www.reddit.com/r/UnearthedArcana/comments/dxvtfd/martial_archetype_the_mist_sovereign_make_your/",
-    date : "2019/11/19"
-}
+    date : "2019/11/19",
+    defaultExcluded : true
+};
 
 AddSubClass("fighter", "mistsovereign", {
     regExpSearch : /mist sovereign/i,
     subname : "Mist Sovereign",
     source : ["G:FMS", 0],
-    defaultExcluded : true,
     features : {
         "subclassfeature3" : {
             name : "Silent Sulker",

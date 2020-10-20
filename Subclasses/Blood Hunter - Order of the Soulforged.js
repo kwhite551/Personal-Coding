@@ -6,14 +6,14 @@ SourceList["S:OS"] = {
     abbreviation : "S:OS",
     group : "Reddit/r/UnearthedArcana",
     url : "https://www.reddit.com/r/UnearthedArcana/comments/fg0f40/blood_hunter_order_of_the_soulforged_play_a_soul/",
-    date : "2020/03/10"
-}
+    date : "2020/03/10",
+    defaultExcluded : true
+};
 
 AddSubClass("blood hunter", "soulforged", {
     regExpSearch : /^(?=.*blood)(?=.*hunter)(?=.*soulforged).*$/i,
     subname : "Order of the Soulforged",
     source : [["S:OS", 1]],
-    defaultExcluded : true,
     features : {
         "subclassfeature3" : {
             name : "Forging the Soul",

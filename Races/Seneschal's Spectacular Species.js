@@ -6,7 +6,8 @@ SourceList["S:SSS"] = {
     abbreviation : "S:SSS",
     group : "Friendly Bunch Homebrew",
     date : "2020/09/15",
-    url : "Seneschal's Spectacular Species"
+    defaultExcluded : true,
+    url : "https://www.gmbinder.com/share/-MCDhfJlbfSY7kZZGEuD"
 };
 
 RaceList["guardianLupin"] = {
@@ -18,7 +19,6 @@ RaceList["guardianLupin"] = {
     speed : {
         walk : { spd : 35, enc : 25 }
     },
-    defaultExcluded : true,
     languageProfs : ["Common", "Lupin"],
     weaponsAdd : ["Lupin's Bite", "Lupin's Claws"],
     vision : [["Darkvision", 60], ["Keen Smell and Hearing", 0]],
@@ -51,7 +51,6 @@ RaceList["oratorLupin"] = {
     speed : {
         walk : { spd : 35, enc : 25 }
     },
-    defaultExcluded : true,
     languageProfs : ["Common", "Lupin"],
     weaponsAdd : ["Lupin's Bite", "Lupin's Claws"],
     vision : [["Darkvision", 60], ["Keen Smell and Hearing", 0]],
@@ -111,7 +110,6 @@ RaceList["warriorLupin"] = {
     speed : {
         walk : { spd : 35, enc : 25 }
     },
-    defaultExcluded : true,
     languageProfs : ["Common", "Lupin"],
     weaponsAdd : ["Lupin's Bite", "Lupin's Claws"],
     weaponProfs : [false, false, ["3 marital weapons of your choice"]],
@@ -146,7 +144,6 @@ RaceList["arachni"] = {
         walk : { spd : 30, enc : 20 },
         climb : { spd : 30, enc : 20 }
     },
-    defaultExcluded : true,
     languageProfs : ["Common", 1],
     weaponsAdd : ["Arachni Bite", "Arachni Claw"],
     vision : ["Darkvision", 60],

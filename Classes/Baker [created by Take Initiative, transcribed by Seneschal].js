@@ -6,6 +6,7 @@ SourceList["TI:B"] = {
     abbreviation : "TI:B",
     group : "Dungeon Masters Guild",
     url : "https://www.dmsguild.com/product/208294/Baker-Class-V02",
+    defaultExcluded : true,
     date : "2017/03/26"
 };
 
@@ -16,7 +17,6 @@ ClassList["baker"] = {
     primaryAbility : "Dexterity and Charisma",
     prereqs : "",
     die : 8,
-    defaultExcluded : true,
     improvements : [0, 0, 0, 1, 1, 2, 2, 3, 3, 3, 3, 4, 4, 5, 5, 6, 6, 6, 7, 7],
     saves : ["Dex", "Cha"],
     abilitySave : 6,

@@ -6,7 +6,8 @@ SourceList["UA:POR"] = {
 	abbreviation : "UA:POR",
 	group : "Unearthed Arcana",
 	url : "https://media.wizards.com/2020/dnd/downloads/UA2020_PsionicOptions.pdf",
-	date : "2020/04/14"
+    date : "2020/04/14",
+    defaultExcluded : true,
 };
 
 AddSubClass("rogue", "Soul Knife", {

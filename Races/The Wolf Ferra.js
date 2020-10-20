@@ -22,8 +22,9 @@ SourceList["P:WF"] = { //Object name; This is the way the source is called upon,
 	name : "Perry's Wolf Ferra", //Required; The name of the source as written in full. This will be used in the tooltips/mouseover text.
 	abbreviation : "P:WF", //Required; The abbreviation of the source. This can only be letters and a colon! This will be used to refer to the source in the form fields //Note that this doesn't have to be the same as the way the source is called upon, but it can be for convenience
 	group : "Friendly Bunch Homebrew", //Optional; Adding this will make the sheet put the source into a group when using the "Sources" function where you can include/exclude sources. // The default options for this are "Unearthed Arcana", "Official Sources", "Official Sources (small)", and "default". // If you enter "default", the source can't be excluded using the "Sources" function
+	defaultExcluded : true,
 	date : "2019/09/24", //Optional; the date of the resource, written as year/month/day
-}
+};
 
 //Create Wolf Ferra Object
 RaceList["wolfFerra"] = {
@@ -43,7 +44,6 @@ RaceList["wolfFerra"] = {
 	savetxt : {
 		text : ["Athletics", "Proficient when sprinting"]
 	},
-	defaultExcluded : true,
 	skills : ["Perception"],
 	age : " mature physically and mentally by 10 years and live up to 350 years.",
 	height : " range from under 5 to 6 feet tall (4'8\" + 2d6\")",

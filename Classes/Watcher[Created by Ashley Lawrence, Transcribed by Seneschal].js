@@ -6,8 +6,9 @@ SourceList["AL:TW"] = {
     abbreviation: "AL:TW",
     group : "Dungeon Masters Guild",
     url : "https://www.dmsguild.com/product/270236/The-Watcher-Class",
+    defaultExcluded : true,
     date : "2019/03/19"
-}
+};
 
 ClassList["watcher"] = {
     regExpSearch : /watcher/i,
@@ -15,7 +16,6 @@ ClassList["watcher"] = {
     source : ["AL:TW", 0],
     primaryAbility : "Strength and Wisdom",
     prereqs : "Strength 13 or Wisdom 13",
-    defaultExcluded : true,
     die : 10,
     improvements : [0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 5, 5],
     saves : ["Wis", "Str"],

@@ -5,6 +5,7 @@ SourceList["RR:K"] = {
     name : "Roxiroon : Koibold",
     abbreviation : "RR:K",
     group : "Friendly Bunch Homebrew",
+    defaultExcluded : true,
     date : "2020/09/13"
 };
 
