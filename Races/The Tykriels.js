@@ -8,56 +8,6 @@ SourceList["K:T"] = { //Object name; This is the way the source is called upon, 
 	defaultExcluded : true,
 	date : "2019/09/24", //Optional; the date of the resource, written as year/month/day
 };
-
-RaceList["tykriel"] = {
-	regExpSearch : /tykriel/i,
-	name : "Tykriel",
-	sortname : "Tykriel",
-	source : [["K:T", 0]],
-	plural : "Tykriel",
-	size : 3,
-	speed : {
-		walk : { spd : 30, enc : 20 },
-	},
-	toolProfs : ["Tinker's Tools"],
-	languageProfs : ["Common", "Tykriel", 1],
-	weaponprofs : [false, false, ["Light Crossbows", "Heavy Crossbows", "Hand Crossbows"]],
-	age : "Tykriel mature by their late teens and live to around 200 years.",
-	height : "Tykriel range from 5 to over 6 feet tall (5'4\" + 2d8\")",
-	weight : "Tyrkeil weigh around 138 lb (120 + 2d8 \xD7 1d4 lb)",
-	heightMetric : " range from 1,5 to 1,8 metres tall (162 + 5d8 cm)",
-	weightMetric : " weigh around 70 kg (50 + 5d8 \xD7 4d4 / 10 kg)",
-	trait : "Tykriel (+2 Intelligence, +1 Dexterity)\n Tools of the Tykriel: Proficient in Tinkerer's Tools, Light Crossbow, Hand Crossbow, Heavy Crossbow, and Perception.\n Birds of a Feather: Can't digest eggs or any bird based products\nEyes of a Hawke: Proficiency in Perception or Darkvision out to 60 ft.",
-	improvements : "Tykriel: +2 Intellgience, +1 Dexterity",
-	scores : [0, 1, 0, 2, 0, 0]
-}
-
-RaceList["central tykriel"] = {
-	regExpSearch : /^(?=.*central)(?=.*tykriel).*$/i,
-	name : "Central Tykriel",
-	sortname : "Tykriel, Central",
-	source : [["K:T", 0]],
-	plural : "Central Tykriel",
-	size : 3,
-	speed : {
-		walk : { spd : 30, enc : 20 },
-	},
-	toolProfs : ["Tinker's Tools"],
-	languageProfs : ["Common", "Tykriel", 1],
-	weaponprofs : [false, false, ["Light Crossbows", "Heavy Crossbows", "Hand Crossbows"]],
-	skills : [["Perception", "increment"]],
-	skillstxt : "Proficient in Perception, expertise if proficient",
-	addMod : { type : "skill", field : "Init", mod : 1, text : "I have a +1 bonus on initiative rolls." },
-	age : " mature by their late teens and live to around 200 years.",
-	height : " range from 5 to over 6 feet tall (5'4\" + 2d8\")",
-	weight : " weigh around 138 lb (120 + 2d8 \xD7 1d4 lb)",
-	heightMetric : " range from 1,5 to 1,8 metres tall (162 + 5d8 cm)",
-	weightMetric : " weigh around 70 kg (50 + 5d8 \xD7 4d4 / 10 kg)",
-	trait : "Central Tykriel (+2 Intellgience, +1 Dexterity)\n Tools of the Tykriel: Proficient in Tinkerer's Tools, Light Crossbow, Hand Crossbow, Heavy Crossbow, and Perception.\n Birds of a Feather: Can't digest eggs or any bird based products\n Blood of the Heartlands: Expertise in Perception and +1 to Initiative",
-	improvements : "Central Tykriel: +2 Intellgience, +1 Dexterity",
-	scores : [0, 1, 0, 2, 0, 0]
-}
-
 RaceList["northern tykriel"] = {
 	regExpSearch : /^(?=.*northern)(?=.*tykriel).*$/i,
 	name : "Northern Tykriel",
@@ -69,7 +19,7 @@ RaceList["northern tykriel"] = {
 		walk : { spd : 30, enc : 20 },
 	},
 	toolProfs : ["Tinker's Tools"],
-	languageProfs : ["Common", "Tykriel", 1],
+	languageProfs : ["Common", "Tykriel, Dwarvish, or Gnomish"],
 	dmgres : ["Cold"],
 	weaponprofs : [false, false, ["Light Crossbows", "Heavy Crossbows", "Hand Crossbows"]],
 	skills : ["Perception"],
@@ -79,9 +29,18 @@ RaceList["northern tykriel"] = {
 	weight : " weigh around 138 lb (120 + 2d8 \xD7 1d4 lb)",
 	heightMetric : " range from 1,5 to 1,8 metres tall (162 + 5d8 cm)",
 	weightMetric : " weigh around 70 kg (50 + 5d8 \xD7 4d4 / 10 kg)",
-	trait : "Northern Tykriel (+2 Intelligence, +1 Strength)\n Tools of the Tykriel: Proficient in Tinkerer's Tools, Light Crossbow, Hand Crossbow, Heavy Crossbow, and Perception.\n Birds of a Feather: Can't digest eggs or any bird based products\n Blood of the North: Resistant to Cold damage",
+	trait : "Northern Tykriel (+2 Intelligence, +1 Strength)\n Tools of the Tykriel: Proficient in Tinkerer's Tools, Light Crossbow, Hand Crossbow, Heavy Crossbow, and Perception.\n Claws and Talons: I use my talons to deal 1d4 slashing damage and my talons have the finesse property\n Birds of a Feather: Can't digest eggs or any bird based products\n Surface Dweller: Resistant to Cold damage\n Nothern Leverage: Once per long rest as a free action, I add extra damage to my attack equal to my strength modifier.",
 	improvements : "Northern Tykriel: +2 Intelligence, +1 Strength",
-	scores : [1, 0, 0, 2, 0, 0]
+	scores : [1, 0, 0, 2, 0, 0],
+	features : {
+		"northern leverage" : {
+			name : "Northern Leverage",
+			minlevel : 1,
+			usages : 1,
+			recovery : "long rest",
+			additional : "+" + Math.max(1, What('Str Mod')) + " damage"
+		}
+	}
 }
 
 RaceList["southern tykriel"]={
@@ -95,7 +54,7 @@ RaceList["southern tykriel"]={
 		walk : { spd : 35, enc : 25 },
 	},
 	toolProfs : ["Tinker's Tools"],
-	languageProfs : ["Common", "Tykriel", 1],
+	languageProfs : ["Common", "Tykriel, Dwarvish, or Gnomish"],
 	dmgres : ["Fire"],
 	weaponprofs : [false, false, ["Light Crossbows", "Heavy Crossbows", "Hand Crossbows"]],
 	skills : ["Perception"],
@@ -104,7 +63,7 @@ RaceList["southern tykriel"]={
 	weight : " weigh around 138 lb (120 + 2d8 \xD7 1d4 lb)",
 	heightMetric : " range from 1,5 to 1,8 metres tall (162 + 5d8 cm)",
 	weightMetric : " weigh around 70 kg (50 + 5d8 \xD7 4d4 / 10 kg)",
-	trait : "Southern Tykriel (+2 Intellgience, +1 Dexterity)\n Tools of the Tykriel: Proficient in Tinkerer's Tools, Light Crossbow, Hand Crossbow, Heavy Crossbow, and Perception.\n Birds of a Feather: Can't digest eggs or any bird based products\n Blood of the South: Resistant to Fire damage",
+	trait : "Southern Tykriel (+2 Intellgience, +1 Dexterity)\n Tools of the Tykriel: Proficient in Tinkerer's Tools, Light Crossbow, Hand Crossbow, Heavy Crossbow, and Perception.\n Claws and Talons: I use my talons to deal 1d4 slashing damage and my talons have the finesse property\n Birds of a Feather: Can't digest eggs or any bird based products\n Underground Dweller: Resistant to Fire damage",
 	improvements : "Southern Tykriel: +2 Intellgience, +1 Dexterity",
 	scores : [0, 1, 0, 2, 0, 0]
 }
@@ -120,7 +79,7 @@ RaceList["royal tykriel"]={
 		walk : { spd : 30, enc : 20 },
 	},
 	toolProfs : ["Tinker's Tools"],
-	languageProfs : ["Common", "Tykriel", 1],
+	languageProfs : ["Common", "Tykriel, Dwarvish, or Gnomish"],
 	dmgres : ["Lightning"],
 	weaponprofs : [false, false, ["Light Crossbows", "Heavy Crossbows", "Hand Crossbows"]],
 	skills : ["Perception"],
@@ -130,7 +89,14 @@ RaceList["royal tykriel"]={
 	weight : " weigh around 138 lb (120 + 2d8 \xD7 1d4 lb)",
 	heightMetric : " range from 1,5 to 1,8 metres tall (162 + 5d8 cm)",
 	weightMetric : " weigh around 70 kg (50 + 5d8 \xD7 4d4 / 10 kg)",
-	trait : "Royal Tykriel (+2 Intellgience, +1 Dexterity)\n Tools of the Tykriel: Proficient in Tinkerer's Tools, Light Crossbow, Hand Crossbow, Heavy Crossbow, and Perception.\n Birds of a Feather: Can't digest eggs or any bird based products\n Blood of Royalty: Resistant to Lightning damage and can't eat durians",
-	improvements : "Royal Tykriel: +2 Intellgience, +1 Dexterity",
-	scores : [0, 1, 0, 2, 0, 0]
+	trait : "Royal Tykriel (+2 Intellgience, +1 Constitution)\n Tools of the Tykriel: Proficient in Tinkerer's Tools, Light Crossbow, Hand Crossbow, Heavy Crossbow, and Perception.\n Claws and Talons: I use my talons to deal 1d4 slashing damage and my talons have the finesse property\n Birds of a Feather: Can't digest eggs or any bird based products\n Lightning Hide: Resistant to Lightning damage and can't eat durians\n Biological Conduit: I can cast the shocking grasp cantrip and my spellcasting ability is Intelligence.",
+	improvements : "Royal Tykriel: +2 Intellgience, +1 Constitution",
+	scores : [0, 0, 1, 2, 0, 0],
+	spellcastingAbility : 4,
+	spellcastingBonus : {
+		name : "Biological Conduit",
+		spells : ["shocking grasp"],
+		selection : ["shocking grasp"]
+	}
+
 }

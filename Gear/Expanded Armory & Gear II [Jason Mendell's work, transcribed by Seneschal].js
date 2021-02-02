@@ -123,7 +123,7 @@ WeaponsList["jian"] = {
     list : "melee",
     ability : 1,
     type : "Martial",
-    damage : [1, 6, "slash./pierc."],
+    damage : [1, 8, "slash./pierc."],
     range : "Melee",
     weight : 2,
     description : "Finesse, light",
