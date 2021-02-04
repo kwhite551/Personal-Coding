@@ -35,7 +35,7 @@ RaceList["Chartreux-Gattifolk"] = {
     height : "Gattifolk range from about 3’ to 4’ in height.",
     scores : [1, 0, 0, 0, 0, 2],
     scorestxt : "+2 Charisma and +1 to Strength",
-    trait : "Chatreux Gattifolk (+2 Charisma, +1 Strength)\nCat's Claws: I can use my retractable claws to make unarmed strikes dealing 1d4 slashing damage.\nFeline Nimbleness: I can move through the space of any creature that is of a size larger than me."
+    trait : "Chatreux Gattifolk (+2 Charisma, +1 Strength)\nCat's Claws: I can use my retractable claws to make unarmed strikes dealing 1d4 slashing damage.\nFeline Nimbleness: I can move through the space of any creature that is of a size larger than me.\nQuadruped: When I have no items in my hand, I can move on all fours, adding +10 to my movement speed."
 };
 RaceList["Malkin-Gattifolk"] = {
     regExpSearch : /^(?=.*malkin)(?=.*gattifolk).*$/i,
@@ -63,7 +63,7 @@ RaceList["Malkin-Gattifolk"] = {
     scores : [0, 1, 0, 0, 0, 2],
     scorestxt : "+2 Charisma and +1 to Dexterity",
     abilitySave : 2,
-    trait : "Malkin Gattifolk (+2 Charisma, +1 Dexterity)\nCat's Claws: I can use my retractable claws to make unarmed strikes dealing 1d4 slashing damage.\nFeline Nimbleness: I can move through the space of any creature that is of a size larger than me.\nTripping Hazard: Once per my turn, I can trip a creature who's space I move through. They must make a Dexterity save (DC 8 + Dexterity Modifier + Proficiency Bonus). On a failure, they are knocked prone.",
+    trait : "Malkin Gattifolk (+2 Charisma, +1 Dexterity)\nCat's Claws: I can use my retractable claws to make unarmed strikes dealing 1d4 slashing damage.\nFeline Nimbleness: I can move through the space of any creature that is of a size larger than me.\nQuadruped: When I have no items in my hand, I can move on all fours, adding +10 to my movement speed.\nTripping Hazard: Once per my turn, I can trip a creature who's space I move through. They must make a Dexterity save (DC 8 + Dexterity Modifier + Proficiency Bonus). On a failure, they are knocked prone.",
     features : {
         "tripping hazard" : {
             name : "Tripping Hazard",
@@ -103,7 +103,7 @@ RaceList["Skirrish-Gattifolk"] = {
     height : "Gattifolk range from about 3’ to 4’ in height.",
     scores : [0, 0, 1, 0, 0, 2],
     scorestxt : "+2 Charisma and +1 to Constitution",
-    trait : "Skirrish Gattifolk (+2 Charisma, +1 Constitution)\nCat's Claws: I can use my retractable claws to make unarmed strikes dealing 1d4 slashing damage.\nFeline Nimbleness: I can move through the space of any creature that is of a size larger than me."
+    trait : "Skirrish Gattifolk (+2 Charisma, +1 Constitution)\nCat's Claws: I can use my retractable claws to make unarmed strikes dealing 1d4 slashing damage.\nFeline Nimbleness: I can move through the space of any creature that is of a size larger than me.\nQuadruped: When I have no items in my hand, I can move on all fours, adding +10 to my movement speed."
 };
 RaceList["Abys-Gattifolk"] = {
     regExpSearch : /^(?=.*abys)(?=.*gattifolk).*$/i,
@@ -136,5 +136,5 @@ RaceList["Abys-Gattifolk"] = {
     height : "Gattifolk range from about 3’ to 4’ in height.",
     scores : [0, 0, 0, 1, 0, 2],
     scorestxt : "+2 Charisma and +1 to Intelligence",
-    trait : "Abys Gattifolk (+2 Charisma, +1 Intelligence)\nCat's Claws: I can use my retractable claws to make unarmed strikes dealing 1d4 slashing damage.\nFeline Nimbleness: I can move through the space of any creature that is of a size larger than me.\nEsoteric Knowledge: I know one cantrip of my choice from the bard spell list. Intelligence is my spellcasting ability for it."
+    trait : "Abys Gattifolk (+2 Charisma, +1 Intelligence)\nCat's Claws: I can use my retractable claws to make unarmed strikes dealing 1d4 slashing damage.\nFeline Nimbleness: I can move through the space of any creature that is of a size larger than me.\nQuadruped: When I have no items in my hand, I can move on all fours, adding +10 to my movement speed.\nEsoteric Knowledge: I know one cantrip of my choice from the bard spell list. Intelligence is my spellcasting ability for it."
 };
