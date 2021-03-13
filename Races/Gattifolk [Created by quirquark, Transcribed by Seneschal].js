@@ -29,6 +29,9 @@ RaceList["Chartreux-Gattifolk"] = {
 	},
 	vision : [["Darkvision,", 60]],
     dmgres : ["Cold"],
+    savetxt : {
+        adv_vs : ["Charmed"]
+    },
     skillstxt : "Choose one from Insight, Perception, or Stealth",
     toolProfs : ["Tool or Musical Instrument", 1],
     age : "Gattifolk reach maturity in their early 20s and can live well into their second century.",
