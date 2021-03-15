@@ -30,7 +30,7 @@ RaceList["Chartreux-Gattifolk"] = {
 	vision : [["Darkvision,", 60]],
     dmgres : ["Cold"],
     savetxt : {
-        adv_vs : ["Charmed"]
+        adv_vs : ["charmed", "frightened"]
     },
     skillstxt : "Choose one from Insight, Perception, or Stealth",
     toolProfs : ["Tool or Musical Instrument", 1],
