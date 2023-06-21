@@ -308,7 +308,7 @@ dragonKnight_companion_functions = {
 			"\n\u2022 My companion can divide 2 points among its ability scores (to max 20) whenever I gain an ASI" +
 			"\n\u2022 My companion is proficient in two skills and two saving throws of my choice" +
 			"\n\u2022 My companion obeys my commands as best it can, or act on its own if I can't command it" +
-			"\n\u2022 My companion rolls for initiative and takes actions as normal when I absent or incapacitated" +
+			"\n\u2022 My companion rolls for initiative and takes actions as normal when I absent or incapacitated"
 		);
 		// Now go to the companion page and show a pop-up explaining what's happening
 		tDoc.getField(prefix + "Comp.Desc.Name").setFocus();
